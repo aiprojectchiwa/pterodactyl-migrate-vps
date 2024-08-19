@@ -45,7 +45,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```
 5. Restore Database
     ```bash
-    mysql -u root -p < alldb.sql
+    mysql -u root -p < /alldb.sql
     ```
 6. Update DB IP
     ```bash
