@@ -31,7 +31,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 2. Transfer file backup ke VPS baru:
     ```bash
-    scp root@ip:/root/all_backup.tar.gz /
+    scp root@ip:/root/backup.tar.gz /
     ```
 
 3. Ekstrak file backup:
