@@ -29,7 +29,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 4. Backup seluruh database:
     ```bash
-    mysqldump -u root -p --all-databases > alldb.sql
+    mysqldump -u root -p --all             databases > alldb.sql
     ```
 
 5. Gabungkan semua backup ke dalam satu file:
