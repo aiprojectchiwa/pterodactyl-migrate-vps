@@ -60,6 +60,9 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```
 5. Restore Database
     ```bash
+    mysqldump -u root -p --all-  databases > alldb.sql
+    ```
+    ```bash
     mysql
     ```
     ```mysql
