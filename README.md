@@ -114,4 +114,4 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 ---
 
-**yey!** Pindah panel dan node selesai. Jangan lupa bilang **chiwa kawaii** dlu biar lancar! 😊
+masih banyak bug cuk,sebaiknya jangan dicoba🗿
