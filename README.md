@@ -12,30 +12,19 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 ### **VPS Pertama:**
 
-1. Backup sertifikat SSL:
-    ```bash
-    tar -cvzf cert.tar.gz /etc/letsencrypt/
-    ```
-
-2. Backup file Pterodactyl:
-    ```bash
-    tar -cvzf ptero.tar.gz /var/www/pterodactyl
-    ```
-
-3. Backup konfigurasi Nginx:
-    ```bash
-    tar -cvzf nginx.tar.gz /etc/nginx/sites-available/pterodactyl.conf
-    ```
-
-4. Backup seluruh database:
+1. Backup database:
     ```bash
     mysqldump -u root -p --all             databases > alldb.sql
     ```
 
-5. Gabungkan semua backup ke dalam satu file:
-    ```bash
-    tar -cvzf all_backup.tar.gz ptero.tar.gz cert.tar.gz alldb.sql nginx.tar.gz
-    ```
+2. Backup file Pterodactyl
+   ```bash
+   tar -cvzf all_backup.tar.gz \
+    -C /etc/letsencrypt . --transform 's,^,etc/letsencrypt/,' \
+    -C /var/www/pterodactyl . --transform 's,^,var/www/pterodactyl/,' \
+    -C /etc/nginx/sites-available pterodactyl.conf --transform 's,^,etc/nginx/sites-available/,' \
+    -C / alldb.sql
+   ```
 
 ### **VPS Kedua:**
 
