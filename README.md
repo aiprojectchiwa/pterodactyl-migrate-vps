@@ -24,7 +24,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 3. Backup konfigurasi Nginx:
     ```bash
-    tar -cvzf nginx.tar.gz /etc/nginx
+    tar -cvzf nginx.tar.gz /etc/nginx/sites-available/pterodactyl.conf
     ```
 
 4. Backup seluruh database:
