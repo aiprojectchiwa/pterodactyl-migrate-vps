@@ -58,7 +58,15 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```bash
     systemctl restart nginx
     ```
-
+5. Restore Database
+    ```bash
+    mysql
+    ```
+    ```mysql
+    UPDATE allocations
+SET ip = '147.182.182.136'
+WHERE ip = '178.128.29.230';
+```
 ---
 
 ## **Langkah-Langkah Pindah Node**
