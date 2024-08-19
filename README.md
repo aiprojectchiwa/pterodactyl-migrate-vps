@@ -41,7 +41,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 3. Ekstrak file backup:
     ```bash
-    tar -xvzf /all_backup.tar.gz
+    tar -xvzf /all_backup.tar.gz -C /
     ```
 
 4. Restart Nginx:
