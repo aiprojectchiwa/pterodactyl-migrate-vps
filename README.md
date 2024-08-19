@@ -2,7 +2,7 @@
 
 Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus rokok biar work 😊
 
-> **Syarat Work**: Bilang **chiwa kawaii** dulu >\\< mwehehe, yang ga bilang ga work 😜
+> **Syarat Work**: Bilang **chiwa kawaii** dulu >\\< mwehehe, yang ga bilang ga work :3
 
 > **Catatan**: Cara ini baru diuji dan berhasil pada dua distro dengan versi yang sama.
 
@@ -64,7 +64,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 1. Backup data Node:
     ```bash
-    tar -cvzf node.tar.gz /var/lib/pterodactyl
+    tar -cvzf node.tar.gz /var/lib/pterodactyl /etc/pterodactyl
     ```
 
 2. Stop Wings:
