@@ -14,7 +14,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 1. Backup database:
     ```bash
-    mysql -u root -p < /alldb.sql
+    mysqldump -u root -p --all-databases > /alldb.sql
     ```
 
 2. Backup file Pterodactyl
@@ -49,7 +49,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```
 5. Restore Database
     ```bash
-    mysqldump -u root -p --all-databases > alldb.sql
+    mysql -u root -p < alldb.sql
     ```
 6. Update DB IP
     ```bash
