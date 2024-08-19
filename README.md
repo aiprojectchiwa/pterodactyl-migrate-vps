@@ -19,11 +19,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 2. Backup file Pterodactyl
    ```bash
-   tar -cvzf all_backup.tar.gz \
-    -C /etc/letsencrypt . --transform 's,^,etc/letsencrypt/,' \
-    -C /var/www/pterodactyl . --transform 's,^,var/www/pterodactyl/,' \
-    -C /etc/nginx/sites-available pterodactyl.conf --transform 's,^,etc/nginx/sites-available/,' \
-    -C / alldb.sql
+   tar -cvpzf backup.tar.gz /etc/letsencrypt /var/www/pterodactyl /etc/nginx/sites-available/pterodactyl.conf alldb.sql
    ```
 
 ### **VPS Kedua:**
@@ -40,7 +36,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 3. Ekstrak file backup:
     ```bash
-    tar -xvzf /all_backup.tar.gz -C /
+    tar -xvpzf backup.tar.gz -C /
     ```
 
 4. Restart Nginx:
