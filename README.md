@@ -14,8 +14,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 1. Backup database:
     ```bash
-    mysqldump -u root -p --all-databases > /alldb.sql
-
+    mysql -u root -p < /alldb.sql
     ```
 
 2. Backup file Pterodactyl
