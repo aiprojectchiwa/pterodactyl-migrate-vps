@@ -39,7 +39,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 ### **VPS Kedua:**
 
-1. Jalankan auto installer panel, jangan isi opsi HTTPS dan SSL:
+1. Jalanin auto installer panel, jangan isi opsi HTTPS dan SSL:
     ```bash
     bash <(curl -s https://pterodactyl-installer.se)
     ```
@@ -77,7 +77,7 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
 
 ### **VPS Kedua:**
 
-1. Jalankan auto installer node, jangan isi opsi SSL atau yang membutuhkan sertifikat:
+1. Jalanin auto installer node, jangan isi opsi SSL atau yang membutuhkan sertifikat:
     ```bash
     bash <(curl -s https://pterodactyl-installer.se)
     ```
