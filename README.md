@@ -43,19 +43,6 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```bash
     systemctl restart nginx
     ```
-5. Restore Database
-    ```bash
-    mysql -u root -p < /alldb.sql
-    ```
-6. Update DB IP
-    ```bash
-    mysql
-    ```
-    ```mysql
-    UPDATE allocations
-    SET ip = '147.182.182.136'
-    WHERE ip = '178.128.29.230';
-    ```
 ---
 
 ## **Langkah-Langkah Pindah Node**
@@ -89,14 +76,22 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     tar -xvzf /node.tar.gz
     ```
 
-4. Update IP pada database:
-    ```sql
+4. Restore Database
+    ```bash
+    mysql -u root -p < /alldb.sql
+    ```
+5. Update DB IP
+    ```bash
+    mysql
+    ```
+    ```mysql
     UPDATE allocations
-    SET ip = 'ip baru'
-    WHERE ip = 'ip lama';
+    SET ip = 'IP BARU'
+    WHERE ip = 'IP LAM';
     ```
 
-5. Restart Wings:
+
+6. Restart Wings:
     ```bash
     systemctl restart wings
     ```
