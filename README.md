@@ -73,24 +73,54 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```
 ---
 
-## **Langkah-Langkah Pindah Node**
 
-### **VPS Pertama:**
+## Mengupdate IP
 
+- Lakukan pembaruan IP di domain manager kalian.
 
-### **VPS Kedua:**
+## Mengatasi Masalah Propagasi DNS
 
-1. Jalanin auto installer node, jangan isi opsi SSL atau yang membutuhkan sertifikat:
-    ```bash
-    bash <(curl -s https://pterodactyl-installer.se)
-    ```
+Pembaruan DNS terkadang memerlukan waktu untuk menyebar ke seluruh jaringan, yang dapat menyebabkan jaringan yang kalian gunakan masih mendeteksi IP lama. Untuk mengatasi masalah ini, kalian dapat melakukan beberapa langkah berikut: melakukan flush DNS, membersihkan cache Cloudflare (jika ada), dan menghapus cache pada browser.
 
+### 1. Flush DNS
 
+Untuk membersihkan cache DNS di komputer kalian, jalankan perintah berikut di Command Prompt atau terminal:
 
+```bash
+ipconfig /flushdns
+```
 
+### 2. Hapus Cache Browser
 
+Untuk menghapus cache pada browser, gunakan pintasan berikut:
 
+```
+CTRL + F5
+```
+
+### 3. Bersihkan Cache Cloudflare
+
+Jika kalian menggunakan Cloudflare, ada dua metode untuk membersihkan cache:
+
+**Metode Manual:**
+
+- Masuk ke: **Domain > Caching > Caching Configuration > Purge Everything**
+
+**Metode API:**
+
+Untuk menghapus semua cache menggunakan API Cloudflare, gunakan perintah berikut:
+
+```bash
+curl -X POST "https://api.cloudflare.com/client/v4/zones/ZONE_ID/purge_cache" \
+     -H "Authorization: Bearer APIKEY" \
+     -H "Content-Type: application/json" \
+     --data '{"purge_everything":true}'
+```
 
 ---
 
-masih banyak bug cuk,sebaiknya jangan dicoba🗿
+Makasih >_<
+Udah chiwa test,work kok,video tutorial nyusul yah~~~
+
+---
+
