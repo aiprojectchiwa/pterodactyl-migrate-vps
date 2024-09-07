@@ -123,4 +123,6 @@ Makasih >_<
 Udah chiwa test,work kok,video tutorial nyusul yah~~~
 
 ---
+Link Tutorial
+https://youtu.be/UDnhFKiBons?si=OtLgkKF_jiegDz1B
 
