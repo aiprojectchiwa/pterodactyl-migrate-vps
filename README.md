@@ -73,6 +73,75 @@ Sebelum mulai, alangkah baiknya bikin kopi terlebih dahulu dan siapkan sebungkus
     ```
 ---
 
+### **TUTORIAL ALTERNATIF BY ICHANZX**
+
+### **VPS Pertama:**
+
+1. Backup Database:
+    ```bash
+    mysqldump -u root -p nama_database > /var/www/pterodactyl/panel.sql
+    ```
+
+2. Backup File Pterodactyl,SSL,nginx, dan konfigurasinya
+   ```bash
+   tar -cvpzf backup.tar.gz /etc/letsencrypt /var/www/pterodactyl /etc/nginx/sites-available/pterodactyl.conf
+   ```
+3. Backup Data Node:
+    ```bash
+    tar -cvzf node.tar.gz /var/lib/pterodactyl /etc/pterodactyl
+    ```
+    
+### **VPS Kedua:**
+
+1. Jalanin Auto Installer Panel Sama Node, Jangan Isi Opsi HTTPS dan SSL:
+    ```bash
+    bash <(curl -s https://pterodactyl-installer.se)
+    ```
+
+2. Transfer File Backup Panel dan Node Ke VPS Baru:
+    ```bash
+    scp root@ip:/root/{backup.tar.gz,node.tar.gz} /
+    ```
+    
+3. Ekstrak File Backup Panel:
+    ```bash
+    tar -xvpzf /backup.tar.gz -C /
+    ```
+
+4. Restart Nginx:
+    ```bash
+    systemctl restart nginx
+    ```
+    
+5. Ekstrak File Backup Node:
+    ```bash
+    tar -xvzf /node.tar.gz -C /
+    ```
+
+6. Restore Database
+    ```bash
+    mysql -u root -p < /alldb.sql
+    ```
+
+5. Cek DB MYSQL IP
+    ```bash
+    mysql -u root -p
+    ```
+    ```Pilih database
+    use nama_database;
+    ```
+    ```Check Allocation
+    SELECT * FROM allocations;
+    ```
+6. Restart Wings:
+    ```bash
+    systemctl restart wings
+    ```
+7. Restart MYSQL:
+    ```bash
+    sudo systemctl restart mysql
+    ```
+---
 
 ## Mengupdate IP
 
@@ -124,5 +193,5 @@ Udah chiwa test,work kok,video tutorial nyusul yah~~~
 
 ---
 Link Tutorial
-https://youtu.be/UDnhFKiBons?si=OtLgkKF_jiegDz1B
+-
 
