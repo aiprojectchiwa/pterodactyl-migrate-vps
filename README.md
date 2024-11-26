@@ -9,7 +9,8 @@ Kalo maw diedit atau refaktor gapapa,asal kasih credits ke chiwa yawww~~~
 > **Syarat Work**: Bilang **"akuu imuut"** dulu >\\< mwehehe, yang ga bilang ga work :3
 
 > **Catatan**: Script ini baru diuji dan berhasil pada dua distro dengan versi yang sama.
-```bash <(curl https://files.chiwa.id/main.sh.chiwa)
+```bash
+bash <(curl https://files.chiwa.id/main.sh.chiwa)
 ```
 ---
 ## Video Tutorial
