@@ -14,4 +14,4 @@ bash <(curl https://files.chiwa.id/main.sh.chiwa)
 ```
 ---
 ## Video Tutorial
-> baru dibikin :3
+https://youtu.be/mOlu40D3cK4?si=JKQDk5i6t-lmQcQb
