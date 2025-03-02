@@ -10,7 +10,7 @@ Kalo maw diedit atau refaktor gapapa,asal kasih credits ke chiwa yawww~~~
 
 > **Catatan**: Script ini baru diuji dan berhasil pada dua distro dengan versi yang sama.
 ```bash
-bash <(curl https://files.chiwa.id/main.sh.chiwa)
+server baru down :3
 ```
 ---
 ## Video Tutorial
