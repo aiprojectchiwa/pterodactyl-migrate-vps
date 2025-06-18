@@ -10,8 +10,10 @@ Kalo maw diedit atau refaktor gapapa,asal kasih credits ke chiwa yawww~~~
 
 > **Catatan**: Script ini baru diuji dan berhasil pada dua distro dengan versi yang sama.
 ```bash
-server baru down :3
+inaiii
 ```
+
+Note: script nya udah aku shutdown ya bersamaan dengan migrasi infrastruktur kemarin, monggo boleh dibaca aja docs yang ada di SOURCE.md
 ---
 ## Video Tutorial
 https://youtu.be/mOlu40D3cK4?si=JKQDk5i6t-lmQcQb
